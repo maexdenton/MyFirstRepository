@@ -6,16 +6,16 @@ namespace UserProfileApp
     {
         static void Main(string[] args)
         {
-            // 3. Вызов методов из метода Main
+            // Вызов методов из метода Main
             var userData = GetUserData();
             ShowUserData(userData);
 
-            // Чтобы консоль не закрылась сразу
+            // Это чтобы консоль не закрылась сразу
             Console.WriteLine("\nНажмите любую клавишу для выхода...");
             Console.ReadKey();
         }
 
-        // 1. Метод для сбора данных (возвращает кортеж)
+        // Метод для сбора данных (возвращает кортеж)
         static (string Name, string LastName, int Age, string[] PetNames, string[] FavColors) GetUserData()
         {
             // Ввод имени
@@ -63,7 +63,7 @@ namespace UserProfileApp
             return (name, lastName, age, petNames, favColors);
         }
 
-        // 2. Метод проверки корректности ввода чисел (int > 0)
+        // Метод проверки корректности ввода чисел (int > 0)
         static int CheckCorrectInput(string message)
         {
             int result;
@@ -101,7 +101,7 @@ namespace UserProfileApp
             return array;
         }
 
-        // 3. Метод для вывода данных на экран
+        // Метод для вывода данных на экран
         static void ShowUserData((string Name, string LastName, int Age, string[] PetNames, string[] FavColors) user)
         {
             Console.WriteLine("\n---------------------------");
